@@ -8,10 +8,8 @@
 }
 
 .col {
-//   background-color: bisque;
+   // background-color: bisque;
 }
-
-
 
 // ================================= DESKTOP FIRST
 
@@ -30,28 +28,22 @@
 //     grid-column: span 3;
 // }
 
-
-
 // ================================= TABLET
 
-  @media only screen and (min-width: 401px) and  (max-width: 700px) {
-   
-    @for $i from 1 through 12{
-        .col-l-#{$i}{
-            grid-column: span #{$i};
-        }
+@media only screen and (min-width:map-get($device,"tablet-start")) and (max-width: map-get($device,"tablet-end")) {
+  @for $i from 1 through 12 {
+    .col-l-#{$i} {
+      grid-column: span #{$i};
     }
   }
-
-
+}
 
 // ================================= PHONE
 
-  @media (max-width: 400px) {
-
-    @for $i from 1 through 12{
-        .col-s-#{$i}{
-            grid-column: span #{$i};
-        }
+@media (max-width: map-get($device, "phone")){
+  @for $i from 1 through 12 {
+    .col-s-#{$i} {
+      grid-column: span #{$i};
     }
+  }
 }
