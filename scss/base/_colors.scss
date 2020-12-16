@@ -1,0 +1,25 @@
+//======================= BRANDING COLORS
+$main-color: #ffbaa1;
+$secondary-color: #110acd;
+
+
+
+//======================= BACKGROUND COLORS
+
+$background-color: $main-color;
+
+
+
+//======================= TEXT COLORS
+
+$text-color: #000000;
+
+
+
+//======================= LIGHTER AND DARKER COLORS
+
+$main-color-lighter: lighten($main-color,10%);
+$main-color-darker: darken($main-color,20%);
+
+$secondary-color-lighter: lighten($secondary-color,10%);
+$secondary-color-darker: darken($secondary-color,20%);

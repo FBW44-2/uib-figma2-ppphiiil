@@ -1,4 +1,53 @@
-@import "reset";
-@import 'config';
-@import 'grid';
-@import 'margin';
+
+//=================================== BASE & STYLING
+//TYPOGRAPHY RESET
+@import 'base/reset';
+@import 'base/typo';
+@import 'base/colors';
+@import 'base/variables';
+
+
+
+
+
+//=================================== COMPONENTS
+//BUTTON DROPDOWN COVERS
+@import 'components/buttons';
+
+
+
+//=================================== LAYOUT
+//GRID HEADER FOOTER 
+@import 'layout/grid';
+@import 'layout/margin';
+
+
+
+//=================================== PAGES
+//
+
+
+
+//=================================== THEMES
+//
+
+
+
+//=================================== UTILS
+// VARIABLES  FUNCTIONS MIXINS HELPERS
+
+
+
+//=================================== VENDORS
+// BOOTSTRAP
+
+
+
+//=================================== TESTING
+// @import 'testing/test';
+
+
+body{
+    background-color: $main-color-lighter;
+    height:200px;
+}
